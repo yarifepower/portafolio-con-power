@@ -568,7 +568,9 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .char { position: absolute; z-index: 2; pointer-events: none; }
 .char img { width: 100%; background: transparent !important; filter: drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(0 14px 18px rgba(20, 15, 26, .35)); }
 .char .bubble { left: auto; right: 78%; top: 0; border-radius: 16px 16px 4px 16px; font-size: 1.3rem; }
-.char--index { right: 0; top: -10px; width: clamp(70px, 9vw, 118px); animation: bob 5s ease-in-out infinite; }
+.char--index { right: 0; top: -30px; width: clamp(110px, 13vw, 180px); }
+.char--index img { transform: scaleX(-1); }
+.char--index .bubble { right: 70%; top: -4%; }
 .char--process { right: 0; top: -20px; width: clamp(80px, 10vw, 130px); }
 .char--process .bubble { background: var(--lilac); }
 .contact__copy { position: relative; }
