@@ -571,13 +571,23 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .char--index { right: 0; top: -30px; width: clamp(110px, 13vw, 180px); }
 .char--index img { transform: scaleX(-1); }
 .char--index .bubble { right: 70%; top: -4%; }
-.char--process { right: 0; top: -20px; width: clamp(80px, 10vw, 130px); }
+.char--process { right: 0; top: -40px; width: clamp(100px, 12vw, 160px); }
+.value__subwrap { position: relative; }
+.char--value { right: 0; bottom: -10px; width: clamp(120px, 14vw, 190px); }
+.char--value .bubble { background: var(--violet); color: #fff; }
+.footer__top { position: relative; display: flex; align-items: flex-end; gap: 2rem; }
+.footer__top .footer__logo { flex: 1; }
+.char--footer { position: relative; flex: none; width: clamp(90px, 11vw, 150px); margin-bottom: clamp(36px, 5vw, 64px); }
+.char--footer .bubble { top: -18%; right: 70%; }
 .char--process .bubble { background: var(--lilac); }
 .contact__copy { position: relative; }
 .char--contact { position: relative; width: clamp(110px, 13vw, 170px); margin: 2rem 0 0 auto; animation: bob 3.5s ease-in-out infinite; }
 .char--contact .bubble { right: 85%; top: 8%; }
 @media (max-width: 700px) {
   .char--index, .char--process { width: 72px; top: -30px; }
+  .char--value { width: 90px; bottom: auto; top: -40px; }
+  .char--footer { width: 80px; }
+  .char--footer .bubble { display: none; }
   .char .bubble { font-size: 1.05rem; }
   .char--contact { margin: 1.5rem auto 0; }
 }
