@@ -1,0 +1,5 @@
+# Archivos del sistema que no deben subirse
+desktop.ini
+Thumbs.db
+.DS_Store
+.vercel
