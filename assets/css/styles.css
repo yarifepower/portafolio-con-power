@@ -645,6 +645,11 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .char--index img { transform: scaleX(-1); }
 .char--index .bubble { right: 70%; top: -4%; }
 .char--process { right: 0; top: -40px; width: clamp(100px, 12vw, 160px); }
+.value__top { display: grid; grid-template-columns: 1fr auto; gap: clamp(20px, 4vw, 64px); align-items: center; }
+.value__top .value__intro { grid-template-columns: 1fr; max-width: 40ch; }
+.char--value-top { position: relative; width: clamp(150px, 20vw, 300px); margin-right: clamp(0px, 4vw, 60px); }
+.char--value-top .bubble { top: 4%; right: auto; left: 72%; border-radius: 16px 16px 16px 4px; background: var(--violet); color: #fff; }
+@media (max-width: 760px) { .value__top { grid-template-columns: 1fr; } .char--value-top { width: 150px; justify-self: center; margin: 1rem 0 0; } .char--value-top .bubble { left: 80%; } }
 .value__subwrap { display: flex; align-items: flex-end; justify-content: flex-start; gap: 1.2rem; margin-top: clamp(56px, 8vw, 100px); }
 .value__subwrap .value__sub { margin: 0 0 1.4rem; }
 .char--value { position: relative; flex: none; width: clamp(120px, 13vw, 170px); margin-bottom: -6px; }
