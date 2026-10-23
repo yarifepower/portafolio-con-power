@@ -293,7 +293,7 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .frame__tag {
   position: absolute; top: -2px; left: -2px; transform: translateY(-100%);
   padding: .25em .7em; font-size: .75rem; font-weight: 700; letter-spacing: .02em;
-  background: var(--night); color: #fff;
+  background: var(--orange); color: var(--night);
 }
 .frame .h { position: absolute; width: 12px; height: 12px; background: #fff; border: 2px solid var(--orange); }
 .h--tl { left: 0; top: 0; transform: translate(-50%, -50%); }
