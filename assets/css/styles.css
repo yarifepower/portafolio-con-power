@@ -915,3 +915,13 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
   .nav, .meter, .lightbox, .marquee { display: none !important; }
   .js [data-reveal] { opacity: 1; transform: none; }
 }
+
+/* Famko: lámina de stickers */
+.stickers { margin: 0; padding: clamp(20px, 3vw, 36px); border-radius: var(--radius); background: #F1EFEA; }
+.stickers ul { display: grid; grid-template-columns: repeat(6, 1fr); gap: clamp(14px, 2.4vw, 32px); align-items: center; justify-items: center; list-style: none; margin: 0; padding: 0; }
+.stickers li { width: 100%; display: grid; place-items: center; }
+.stickers li:nth-child(odd) { transform: rotate(-4deg); }
+.stickers li:nth-child(3n) { transform: rotate(5deg); }
+.stickers img { width: auto; max-width: 100%; max-height: clamp(90px, 11vw, 150px); height: auto; background: transparent; box-shadow: none; border-radius: 0; filter: drop-shadow(0 4px 8px rgba(8, 36, 67, .18)); }
+.stickers figcaption { margin-top: clamp(16px, 2vw, 24px); color: #082443; font-size: .85rem; }
+@media (max-width: 700px) { .stickers ul { grid-template-columns: repeat(3, 1fr); } }
