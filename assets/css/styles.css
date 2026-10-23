@@ -514,6 +514,14 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .logo-tile--bleed > a img, .logo-tile--bleed > img { width: 100%; height: 100%; object-fit: contain; border-radius: 0; }
 .logo-tile--img > a img { border-radius: 0; }
 .logo-tile figcaption { padding: .55rem .8rem; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; background: rgba(0, 0, 0, .55); color: #fff; }
+.logo-tile--fit > a { width: 82%; height: 70%; }
+.logo-tile--fit > a img { width: 100%; height: 100%; object-fit: contain; box-shadow: none; border-radius: 0; }
+.logo-tile > svg.mw { place-self: center; width: 78%; max-height: 52%; overflow: visible; }
+.logo-tile > svg.mw--v { width: 70%; max-height: 66%; }
+.logo-tile > svg.mw--iso { width: 34%; max-height: 60%; }
+.mw__t { font-family: "PoppinsBrand", "Poppins", sans-serif; font-weight: 200; font-size: 42px; letter-spacing: .3em; }
+.mw--v .mw__t { font-size: 30px; }
+.mw__d { font-family: "PoppinsBrand", "Poppins", sans-serif; font-weight: 400; font-size: 10.5px; letter-spacing: .22em; }
 .rows--tight { margin-top: clamp(12px, 1.6vw, 20px); }
 .types { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(12px, 1.6vw, 20px); }
 .type { display: grid; grid-template-columns: auto 1fr; gap: 1.4rem; align-items: center; padding: clamp(20px, 2.6vw, 32px); border-radius: var(--radius); background: var(--card); box-shadow: 0 0 0 1px var(--line); }
