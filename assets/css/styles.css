@@ -352,10 +352,10 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .card__icon--teal { background: var(--teal); color: var(--night); }
 .card h4 { font-size: 1.25rem; line-height: 1.2; font-weight: 800; letter-spacing: -.015em; margin-bottom: .6rem; }
 .card p { color: var(--muted); font-size: .98rem; }
-.card .card__ex { margin-top: 1rem; font-family: var(--hand); font-size: 1.3rem; color: var(--violet); }
+.card .card__ex { margin-top: 1rem; font-family: var(--hand); font-size: 1.45rem; color: var(--orange); }
 .deliver { margin-top: clamp(40px, 6vw, 72px); }
 .deliver__label { color: var(--orange); margin-bottom: .8rem; }
-.deliver .chips li { border-color: var(--violet); color: var(--violet); background: #fff; }
+.deliver .chips li { border-color: var(--violet); color: #fff; background: var(--violet); }
 
 @media (max-width: 900px) {
   .value__intro, .cards { grid-template-columns: 1fr; }
