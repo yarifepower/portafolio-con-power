@@ -925,3 +925,15 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .stickers img { width: auto; max-width: 100%; max-height: clamp(90px, 11vw, 150px); height: auto; background: transparent; box-shadow: none; border-radius: 0; filter: drop-shadow(0 4px 8px rgba(8, 36, 67, .18)); }
 .stickers figcaption { margin-top: clamp(16px, 2vw, 24px); color: #082443; font-size: .85rem; }
 @media (max-width: 700px) { .stickers ul { grid-template-columns: repeat(3, 1fr); } }
+
+/* Famko: muestrario de patrones */
+.patterns { margin: 0; }
+.patterns ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px, 1.6vw, 20px); list-style: none; margin: 0; padding: 0; }
+.patterns li { position: relative; border-radius: var(--radius); overflow: hidden; aspect-ratio: 3 / 4; box-shadow: 0 0 0 1px rgba(8, 36, 67, .14), 0 10px 24px -14px rgba(8, 36, 67, .45); transition: transform .3s ease; }
+.patterns li:hover { transform: translateY(-4px) rotate(-1deg); }
+.patterns li .zoom, .patterns li img { display: block; width: 100%; height: 100%; }
+.patterns li img { object-fit: cover; border-radius: 0; box-shadow: none; }
+.patterns li span { position: absolute; left: 10px; bottom: 10px; padding: .35rem .7rem; border-radius: 999px; background: #fff; color: #082443; font-size: .7rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; pointer-events: none; }
+.patterns figcaption { margin-top: clamp(14px, 1.8vw, 20px); }
+.patterns li span { white-space: nowrap; }
+@media (max-width: 700px) { .patterns ul { grid-template-columns: repeat(2, 1fr); } .patterns li span { left: 8px; bottom: 8px; padding: .3rem .55rem; font-size: .58rem; letter-spacing: .02em; } }
