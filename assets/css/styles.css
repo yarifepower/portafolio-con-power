@@ -675,8 +675,8 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .social__link b { font-size: .95rem; color: var(--fg); }
 .social__link:hover { background: rgba(255, 255, 255, .06); border-color: var(--orange); transform: translateY(-2px); }
 .social__link:hover svg { background: var(--orange); color: var(--night); }
-.footer__brand { display: block; width: 150px; color: var(--violet); }
-.footer__brand:hover { color: var(--orange); }
+.footer__brand { display: block; width: 150px; color: var(--orange); }
+.footer__brand:hover { color: #fff; }
 .char--footer { position: relative; flex: none; width: clamp(110px, 13vw, 180px); }
 .char--footer .bubble { top: -18%; right: 70%; }
 .char--process .bubble { background: var(--orange); color: var(--night); }
