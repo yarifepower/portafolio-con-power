@@ -539,6 +539,10 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .vs__imgs { display: flex; gap: clamp(10px, 1.2vw, 14px); align-items: flex-start; }
 .vs__imgs > .fig { flex: var(--ar, 1) 1 0; min-width: 0; }
 .vs__imgs--3 > .fig { flex: 1 1 0; }
+.vs__same { flex: 1 1 0 !important; }
+.vs__same img { aspect-ratio: 1; object-fit: cover; object-position: center 30%; }
+.fig--white img { background: #fff; }
+.row--short { max-width: 620px; }
 .vs__imgs > .logo-tile { flex: 1; aspect-ratio: 16 / 9; }
 .vs__col:first-child .fig img { filter: saturate(.85); }
 .phase__body .result { margin-top: clamp(20px, 3vw, 32px); }
