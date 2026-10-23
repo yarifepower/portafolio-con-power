@@ -155,6 +155,7 @@ strong, b { font-weight: 800; }
 .pill--white { background: #fff; color: var(--violet); }
 .pill--teal { background: var(--teal); color: var(--night); }
 .pill--lilac { background: var(--lilac); color: var(--night); }
+.pill--peach { background: #FFC9A4; color: var(--night); }
 .pill--violet { background: var(--violet); color: #fff; }
 .pill--ink { background: var(--night); color: #fff; }
 
