@@ -937,3 +937,13 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .patterns figcaption { margin-top: clamp(14px, 1.8vw, 20px); }
 .patterns li span { white-space: nowrap; }
 @media (max-width: 700px) { .patterns ul { grid-template-columns: repeat(2, 1fr); } .patterns li span { left: 8px; bottom: 8px; padding: .3rem .55rem; font-size: .58rem; letter-spacing: .02em; } }
+
+/* Hacia dónde voy: marcas educativas */
+.aim { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(24px, 4vw, 56px); align-items: center; margin-top: clamp(40px, 6vw, 72px); padding: clamp(28px, 4.5vw, 56px); border-radius: var(--radius); background: var(--ink); color: #fff; }
+.aim__eyebrow { color: #D6A3FB; margin-bottom: .5rem; }
+.aim__title { font-size: clamp(1.7rem, 1.2rem + 2vw, 2.7rem); line-height: 1.08; font-weight: 900; margin-bottom: 1rem; }
+.aim__text p:last-child { color: rgba(255, 255, 255, .9); max-width: 58ch; }
+.aim__text strong { color: #fff; }
+.aim__side { display: grid; gap: 1.4rem; justify-items: start; }
+.aim .chips li { background: transparent; border-color: rgba(255, 255, 255, .5); color: #fff; }
+@media (max-width: 800px) { .aim { grid-template-columns: 1fr; } }
