@@ -960,3 +960,9 @@ main > section, .footer { background-color: var(--bg); color: var(--fg); positio
 .value__top .value__intro { margin-top: 0; max-width: 52ch; }
 .value__top .char--value-top { margin: 0 clamp(0px, 3vw, 40px) 0 0; }
 @media (max-width: 760px) { .value__top { grid-template-columns: 1fr; } .value__top .char--value-top { order: 2; justify-self: center; } }
+
+/* Títulos mitad bold, mitad light: la palabra recuadrada sigue en bold */
+.light .sel { font-weight: 900; letter-spacing: normal; }
+.value__top .char--value-top { margin-right: clamp(60px, 9vw, 130px); }
+.process .h2 { padding-right: clamp(110px, 15vw, 220px); }
+@media (max-width: 760px) { .value__top .char--value-top { margin-right: 0; } .process .h2 { padding-right: 0; } }
